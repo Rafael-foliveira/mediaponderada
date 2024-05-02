@@ -39,8 +39,7 @@
 
     <script src="./scripts/media.js"></script>
     <script>
-        /** TODO.2: crie variáveis para armazenar os valores das notas
-            e pesos à partir dos inputs.**/
+            
         let button = document.querySelector("#botao_verificar");
         
         button.addEventListener("click", verificar);
@@ -60,8 +59,8 @@
         console.log(n1,n2,n3,n4,p1,p2,p3,p4,presenca)
 
                                             // TODO.3:
-            let media = 10;                 // Corrija esta linha..
-            let resultado = "Aprovado";     // ... e esta de modo a realizar
+            let media = calculaMedia(n1, n2, n3, n4, p1 = 1, p2 = 1, p3 = 1, p4 = 1) // Corrija esta linha..
+            let resultado =  verificaAprovacao(media, presenca = 0.75)    // ... e esta de modo a realizar
                                             // o cálculo da média corretamente.         
             document.querySelector("#media").textContent = media;
             document.querySelector("#resultado").textContent = resultado;
